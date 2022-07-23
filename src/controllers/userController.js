@@ -11,8 +11,16 @@ const getAll = async (req, res) => {
 
 const createUser = async (req, res) => {
 
+    const { name, email, password, specialty, registration, timeWorking } = req.body;
             try {
-                const users = await new userSchema(req.body);
+                const users = new userSchema({
+                    name, 
+                    email,
+                    password,
+                    specialty,
+                    registration,
+                    timeWorking
+                });
 
                 const savedUser = await users.save();
 
