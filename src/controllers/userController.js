@@ -59,7 +59,7 @@ const updateUser = async (req, res) => {
         } catch (err) {
             console.error(err)
             res.status(400).send({
-                "message": "Houve um erro ao atualizar a conta. Tente novamente."
+                "message": error.message
             })
         }
     }
@@ -69,9 +69,9 @@ const updateUser = async (req, res) => {
             const findUser = await userSchema.findById(req.body.id)
 
             if (!findUser) {
-                res.status(404).send({
-                    "message": "Conta não encontrada",
-                    "statusCode": 400
+                console.error(err)
+            res.status(400).send({
+                "message": error.message
                 })
                 return
             }
@@ -84,7 +84,7 @@ const updateUser = async (req, res) => {
         } catch (err) {
             console.error(err)
             res.status(400).send({
-                "message": "Houve um erro ao deletar a conta. Tente novamente."
+                "message": error.message
             })
         }
 
