@@ -41,8 +41,7 @@ const updateUser = async (req, res) => {
 
             if (!findUser) {
                 res.status(404).send({
-                    "message": "Conta não encontrada",
-                    "statusCode": 400
+                    "message": error.message
                 })
                 return
             }
