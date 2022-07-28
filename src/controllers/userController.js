@@ -40,21 +40,14 @@ const createUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
         try {
-            const findUser = await userSchema.findById(req.body.id)
-
-            if (!findUser) {
-                return res.status(400).send({
-                    "message": "Usuário não encontrado!"
-                    })
-            }
-
-            User.findByIdAndUpdate(req.body.id, {
-                name: req.body?.name,
-                email: req.body?.email,
-                password: req.body?.password,
+          const user= await userSchema.findByIdAndUpdate(req.params.id, {
+                name: req.body.name,
+                email: req.body.email,
+                password: req.body.password,
             })
             res.status(200).send({
                 "message": "Conta atualizada com sucesso",
+                user
             })
 
         } catch (err) {
@@ -67,16 +60,7 @@ const updateUser = async (req, res) => {
 
     const deleteUser = async (req, res) => {
         try {
-            const findUser = await userSchema.findById(req.body.id)
-
-            if (!findUser) {
-                return res.status(400).send({
-                "message": "Usuário não encontrado!"
-                })
-                
-            }
-
-            User.findByIdAndDelete(req.body.id)
+           await userSchema.findByIdAndDelete(req.params.id)
             res.status(200).send({
                 "message": "Conta apagada com sucesso!",
             })
