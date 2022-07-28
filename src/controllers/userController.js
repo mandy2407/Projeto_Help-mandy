@@ -6,6 +6,9 @@ const getAll = async (req, res) => {
         res.status(200).send(allUser)
     } catch (err) {
         console.error(err)
+        res.status(400).send({
+            "message": error.message
+        })
     }
 }
 
@@ -40,10 +43,9 @@ const updateUser = async (req, res) => {
             const findUser = await userSchema.findById(req.body.id)
 
             if (!findUser) {
-                res.status(404).send({
-                    "message": error.message
-                })
-                return
+                return res.status(400).send({
+                    "message": "Usuário não encontrado!"
+                    })
             }
 
             User.findByIdAndUpdate(req.body.id, {
@@ -68,11 +70,10 @@ const updateUser = async (req, res) => {
             const findUser = await userSchema.findById(req.body.id)
 
             if (!findUser) {
-                console.error(err)
-            res.status(400).send({
-                "message": error.message
+                return res.status(400).send({
+                "message": "Usuário não encontrado!"
                 })
-                return
+                
             }
 
             User.findByIdAndDelete(req.body.id)
@@ -83,7 +84,7 @@ const updateUser = async (req, res) => {
         } catch (err) {
             console.error(err)
             res.status(400).send({
-                "message": error.message
+                "message": err.message
             })
         }
 
