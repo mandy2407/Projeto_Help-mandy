@@ -44,21 +44,21 @@ Seguindo, o colaborador terá acesso ao seu perfil, onde poderá adicionar novas
 
 ⭐ Tecnologias utilizadas:
 
-• JavaScript;
-• Git/Github;
-• Node.js;
-• MongoDb;
-• Postman;
-• Vscode;
-• heroku.
+• JavaScript
+• Git/Github
+• Node.js
+• MongoDb
+• Postman
+• Vscode
+• heroku
 
 ⭐ Pacotes Utilizados:
 
-• Express;
-• Nodemon;
-• Dotenv;
-• Mongoose;
-• Cors.
+• Express
+• Nodemon
+• Dotenv
+• Mongoose
+• Cors
 
 ⭐ Rotas/EndPoints:
 
@@ -69,13 +69,13 @@ DELETE: /deleteuser	= Rota que deleta um profissional da lista.
 
 🚧 Melhorias para o futuro:
 
-• Implantação do Front-end;
-• Melhorias nas rotas e Endpoints;
-• Colocar autenticação de senhas;
-• Realizar o cadastro do paciente;
-• Implementar mais funcionalidades para todos os usuários;
-• Chat online para que o profissional se comunique com o paciente;
-• Plataforma para vídeo chamada para atendimento online.
+• Implantação do Front-end
+• Melhorias nas rotas e Endpoints
+• Colocar autenticação de senhas
+• Realizar o cadastro do paciente
+• Implementar mais funcionalidades para todos os usuários
+• Chat online para que o profissional se comunique com o paciente
+• Plataforma para vídeo chamada para atendimento online
 
 ❤ Agradecimentos:
 
