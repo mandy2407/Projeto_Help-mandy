@@ -70,6 +70,14 @@ PUT: /updateuser = Rota que atualiza os dados do profissional.
 
 DELETE: /deleteuser	= Rota que deleta um profissional da lista.
 
+⭐ Rotas/EndPoints:
+
+• local: http://localhost:9055
+
+• Heroku: https://help-mandy.herokuapp.com/
+
+
+
 🚧 Melhorias para o futuro:
 
 • Implantação do Front-end;
