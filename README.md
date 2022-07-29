@@ -70,7 +70,7 @@ PUT: /updateuser = Rota que atualiza os dados do profissional.
 
 DELETE: /deleteuser	= Rota que deleta um profissional da lista.
 
-⭐ Rotas/EndPoints:
+⭐ Rotas:
 
 • local: http://localhost:9055
 
