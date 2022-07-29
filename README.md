@@ -22,12 +22,12 @@ A proposta do site é auxiliar pessoas de baixa renda e com a saúde mental afet
 
 A plataforma inicia-se com o pré cadastro para o profissional de saúde poder ter acesso, ao qual solicita os seguintes dados pessoais:
 
-•	Nome completo;
-•	E-mail;
-•	Senha;
-•	Especialidade;
-•	Registro (opcional);
-•	Tempo de experiência.
+•	Nome completo
+•	E-mail
+•	Senha
+•	Especialidade
+•	Registro (opcional)
+•	Tempo de experiência
 
 Seguindo, o colaborador terá acesso ao seu perfil, onde poderá adicionar novas informações para que o usuário comum visualize e possa entrar em contato com este profissional para poder ser atendido gratuitamente.
 
@@ -63,8 +63,11 @@ Seguindo, o colaborador terá acesso ao seu perfil, onde poderá adicionar novas
 ⭐ Rotas/EndPoints:
 
 GET: /allusers = Rota que retorna uma lista com todos os profissionais cadastrados.
+
 POST: /createuser = Rota que cadastra um novo profissional.
+
 PUT: /updateuser = Rota que atualiza os dados do profissional.
+
 DELETE: /deleteuser	= Rota que deleta um profissional da lista.
 
 🚧 Melhorias para o futuro:
