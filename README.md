@@ -37,10 +37,10 @@ Seguindo, o colaborador terá acesso ao seu perfil, onde poderá adicionar novas
 
 ⭐ Funcionalidades:
 
-• Listar os profissionais cadastrados;
-• Cadastrar novos profissionais voluntários;
-• Atualizar os dados desses profissionais;
-• Deletar a conta, caso o usuário queira.
+• Listar os profissionais cadastrados
+• Cadastrar novos profissionais voluntários
+• Atualizar os dados desses profissionais
+• Deletar a conta, caso o usuário queira
 
 ⭐ Tecnologias utilizadas:
 
